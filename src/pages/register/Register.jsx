@@ -4,7 +4,7 @@ import RegisterForm from "../../components/registerForm/RegisterForm";
 const Register = () => {
 
 
-    return <div class='register-page'>
+    return <div className='register-page'>
         <div className="left-side">
                 
             {/* <img src={Disco} alt='img' /> */}
