@@ -7,39 +7,42 @@
     justify-content: center;
     align-items: center;
     color: white;
-    gap: 10px;
+
+    gap : 15px;
 
 
 }
 
-.title {
-    margin-bottom: 20px;
-}
 
 .title h1 {
     color: #72DB73;
     font-family: Single Day;
-    font-size: 67px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 139.688%;
+    margin: auto;
+    text-align: center;
     /* 93.591px */
+
 }
 
 .title p {
     color: #FFF;
     font-family: DM Sans;
-    font-size: 25px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 139.688%;
+    text-align: center;
     /* 34.922px */
+    padding-bottom: 20px;
 }
 
 .form-input {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 input::-webkit-input-placeholder {
@@ -50,7 +53,7 @@ input::-webkit-input-placeholder {
     border-radius: 3.816px;
     background: #292929;
     width: 518px;
-    height: 55px;
+    height: 3rem;
     flex-shrink: 0;
     border-style: none;
     color: inherit
@@ -58,13 +61,13 @@ input::-webkit-input-placeholder {
 
 .submit-button {
     width: 518px;
-    height: 55px;
+    height: 50px;
     flex-shrink: 0;
     border-radius: 28px;
     background: #72DB73;
     color: #FFF;
     font-family: Roboto;
-    font-size: 29px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: 108.688%;
@@ -75,14 +78,15 @@ input::-webkit-input-placeholder {
 
 .term-condition {
     margin: 0px;
+    margin-bottom: 20px;
 }
 
 .term-condition p {
-    width: 518px;
+    width: 517px;
     height: 64.869px;
     color: #7C7C7C;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 500;
     line-height: 141.7%;
@@ -98,7 +102,7 @@ input::-webkit-input-placeholder {
     margin-left: 15px;
     color: #7C7C7C;
     font-family: DM Sans;
-    font-size: 20.033px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 139.688%;
@@ -110,9 +114,24 @@ input::-webkit-input-placeholder {
 .special-text {
     color: #72DB73;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: 141.7%;
     letter-spacing: 0.36px;
+}
+
+
+.error-message {
+    color: #F00;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%;
+    letter-spacing: 0.401px;
+}
+
+.permission-error{
+    margin-top : 5px;
 }

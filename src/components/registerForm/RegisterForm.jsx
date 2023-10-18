@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./registerForm.css";
+import { useEffect } from "react";
 const RegisterForm = () => {
   const [userInfo, setUserInfo] = useState({
     name: "",
@@ -8,6 +9,41 @@ const RegisterForm = () => {
     phone: "",
     permissions: false,
   });
+  const [error, setError] = useState({
+    name: "",
+    username: "",
+    email: "",
+    phone: "",
+    permissions: "",
+  });
+
+  const validateCheck = () => {
+    const newErr = {
+      name: "",
+      username: "",
+      email: "",
+      phone: "",
+      permissions: "",
+    };
+
+    if (userInfo.name === "") {
+      newErr.name = "Feild is required";
+    }
+    if (userInfo.username === "") {
+      newErr.username = "Feild is required";
+    }
+    if (userInfo.email === "") {
+      newErr.email = "Feild is required";
+    }
+    if (userInfo.phone === "") {
+      newErr.phone = "Feild is required";
+    }
+    if (userInfo.permissions === false) {
+      newErr.permissions = "Check this box if you want to proceed";
+    }
+    setError(newErr);
+    return newErr;
+  };
 
   const handleInputChange = (e) => {
     // console.log(e.target.name,e.target.value)
@@ -18,9 +54,8 @@ const RegisterForm = () => {
       setUserInfo({ ...userInfo, [name]: value });
     }
   };
-  const handleSubmit = (e) => {
-    
- 
+  const handleSubmit = () => {
+    validateCheck();
   };
   return (
     <div className="form">
@@ -28,7 +63,7 @@ const RegisterForm = () => {
         <h1>Super App</h1>
         <p> Create your new account</p>
       </div>
-      <form className="form-input">
+      <div className="form-input">
         <input
           type="text"
           className="input"
@@ -37,6 +72,8 @@ const RegisterForm = () => {
           value={userInfo.name}
           onChange={handleInputChange}
         />
+
+        {error && error.name && <p className="error-message">{error.name}</p>}
         <input
           type="text"
           className="input"
@@ -45,6 +82,7 @@ const RegisterForm = () => {
           value={userInfo.username}
           onChange={handleInputChange}
         />
+        {error && error.username && <p className="error-message">{error.username}</p>}
         <input
           type="text"
           className="input"
@@ -53,6 +91,7 @@ const RegisterForm = () => {
           value={userInfo.email}
           onChange={handleInputChange}
         />
+        {error?.email && <p className="error-message">{error.email}</p>}
         <input
           type="text"
           className="input"
@@ -61,6 +100,7 @@ const RegisterForm = () => {
           value={userInfo.phone}
           onChange={handleInputChange}
         />
+        {error?.phone && <p className="error-message">{error.phone}</p>}
 
         <div className="checkbox-container">
           <input
@@ -70,12 +110,13 @@ const RegisterForm = () => {
             onChange={handleInputChange}
           />
           <span>Share my registration data with Superapp</span>
+          {error?.permissions && <p className="error-message permission-error">{error.permissions}</p>}
         </div>
         <button className="submit-button" onClick={handleSubmit}>
           SIGN UP
         </button>
-      </form>
-
+      </div>
+{/* // TODO: Make the boxes red input box */}
       <div className="term-condition">
         <p>
           By clicking on Sign up. you agree to Superapp{" "}
