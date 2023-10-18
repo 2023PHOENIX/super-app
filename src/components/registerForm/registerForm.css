@@ -13,6 +13,9 @@
 
 }
 
+.error-state-form{
+    gap : 0px;
+}
 
 .title h1 {
     color: #72DB73;
@@ -127,7 +130,7 @@ input::-webkit-input-placeholder {
 .error-message {
     color: #F00;
     font-family: DM Sans;
-    font-size: 1rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 139.688%;

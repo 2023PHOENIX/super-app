@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Register from './pages/register/Register'
-
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 /*
   ? How many pages are there in app 
 
@@ -24,6 +25,9 @@ function App() {
     <>
       <Register/>
       
+
+
+      <ToastContainer/>
     </>
   )
 }

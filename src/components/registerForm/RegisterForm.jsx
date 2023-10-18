@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./registerForm.css";
 import { useEffect } from "react";
+import { toast } from "react-toastify";
 const RegisterForm = () => {
   const [userInfo, setUserInfo] = useState({
     name: "",
@@ -42,7 +43,7 @@ const RegisterForm = () => {
       newErr.permissions = "Check this box if you want to proceed";
     }
     setError(newErr);
-    return newErr;
+    return Object.values(newErr).some((x) => x !== "");
   };
 
   const handleInputChange = (e) => {
@@ -55,15 +56,42 @@ const RegisterForm = () => {
     }
   };
   const handleSubmit = () => {
-    validateCheck();
+    const hasError = validateCheck();
+
+    if (hasError) {
+      toast.error("Error Please fill it correctly 💀", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    } else {
+      localStorage.setItem("user", JSON.stringify(userInfo));
+      toast.info("Your data has been saved !", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+      toast;
+    }
   };
+  const hasError = Object.values(error).some(x => x !== '');
   return (
-    <div className="form">
+    <div className={"form " +(  hasError ?'error-state-form' : '') }>
       <div className="title">
         <h1>Super App</h1>
         <p> Create your new account</p>
       </div>
-      <div className="form-input">
+      <div className={"form-input " + (hasError ? 'error-state-input-form' : '')}>
         <input
           type="text"
           className={"input " + (error?.name ? "input-feild-error" : "")}
@@ -113,7 +141,9 @@ const RegisterForm = () => {
           />
           <span>Share my registration data with Superapp</span>
           {error?.permissions && (
-            <p className="error-message permission-error">{error.permissions}</p>
+            <p className="error-message permission-error">
+              {error.permissions}
+            </p>
           )}
         </div>
         <button className="submit-button" onClick={handleSubmit}>
