@@ -3,6 +3,7 @@ import './App.css'
 import Register from './pages/register/Register'
   import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 /*
   ? How many pages are there in app 
 
@@ -23,7 +24,13 @@ function App() {
 
   return (
     <>
-      <Register/>
+      
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Register/> } />
+        </Routes>
+        
+      </BrowserRouter>
       
 
 
