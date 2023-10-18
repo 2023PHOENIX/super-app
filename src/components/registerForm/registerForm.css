@@ -82,6 +82,7 @@ input::-webkit-input-placeholder {
 .term-condition {
     margin: 0px;
     margin-bottom: 20px;
+    padding-left : 15px;
 }
 
 .term-condition p {
