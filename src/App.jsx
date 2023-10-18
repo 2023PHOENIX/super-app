@@ -4,6 +4,7 @@ import Register from './pages/register/Register'
   import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Category from './pages/category/Category';
 /*
   ? How many pages are there in app 
 
@@ -27,7 +28,9 @@ function App() {
       
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Register/> } />
+          <Route path='/' element={<Register />} />
+          <Route path='/register' element={<Register/>} />
+          <Route path='/category' element={<Category/>} />
         </Routes>
         
       </BrowserRouter>
