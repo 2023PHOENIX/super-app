@@ -66,7 +66,7 @@ const RegisterForm = () => {
       <div className="form-input">
         <input
           type="text"
-          className="input"
+          className={"input " + (error?.name ? "input-feild-error" : "")}
           placeholder="Name"
           name="name"
           value={userInfo.name}
@@ -76,16 +76,18 @@ const RegisterForm = () => {
         {error && error.name && <p className="error-message">{error.name}</p>}
         <input
           type="text"
-          className="input"
+          className={"input " + (error?.name ? "input-feild-error" : "")}
           placeholder="UserName"
           name="username"
           value={userInfo.username}
           onChange={handleInputChange}
         />
-        {error && error.username && <p className="error-message">{error.username}</p>}
+        {error && error.username && (
+          <p className="error-message">{error.username}</p>
+        )}
         <input
           type="text"
-          className="input"
+          className={"input " + (error?.name ? "input-feild-error" : "")}
           placeholder="Email"
           name="email"
           value={userInfo.email}
@@ -94,7 +96,7 @@ const RegisterForm = () => {
         {error?.email && <p className="error-message">{error.email}</p>}
         <input
           type="text"
-          className="input"
+          className={"input " + (error?.name ? "input-feild-error" : "")}
           placeholder="Mobile"
           name="phone"
           value={userInfo.phone}
@@ -110,13 +112,15 @@ const RegisterForm = () => {
             onChange={handleInputChange}
           />
           <span>Share my registration data with Superapp</span>
-          {error?.permissions && <p className="error-message permission-error">{error.permissions}</p>}
+          {error?.permissions && (
+            <p className="error-message permission-error">{error.permissions}</p>
+          )}
         </div>
         <button className="submit-button" onClick={handleSubmit}>
           SIGN UP
         </button>
       </div>
-{/* // TODO: Make the boxes red input box */}
+      {/* // TODO: Make the boxes red input box */}
       <div className="term-condition">
         <p>
           By clicking on Sign up. you agree to Superapp{" "}
