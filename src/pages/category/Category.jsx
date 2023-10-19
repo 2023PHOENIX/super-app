@@ -24,6 +24,11 @@ function Category() {
     localStorage.setItem("user-selected-category",newList);
   };
 
+  const nextPageHandler = () => {
+    // TODO: next page handler.
+    alert('please redirect me.');
+  }
+
   return (
     <div className="category-page">
       <div className="side-bar">
@@ -48,7 +53,7 @@ function Category() {
         ))}
       </div>
 
-      <button className="next-button">Next Page</button>
+      <button className="next-button" onClick={nextPageHandler}>Next Page</button>
     </div>
   );
 }
