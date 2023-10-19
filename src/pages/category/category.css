@@ -1,0 +1,143 @@
+.category-page {
+  background-color: #000;
+  height: 100vh;
+  width: 100wh;
+  display: flex;
+
+  position: relative;
+}
+
+.side-bar {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 50px;
+  padding-left: 40px;
+  gap: 40px;
+}
+
+.side-bar h1 {
+  color: #72DB73;
+  font-family: Single Day;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%;
+  /* 99.178px */
+}
+
+.message-text {
+  width: 400px;
+  /* height: 316px; */
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 139.688%;
+  /* 94.988px */
+}
+
+.category-pick {
+  width: 560px;
+  /* height: 300px; */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.picked-button {
+  width: 180px;
+  height: 40px;
+  /* flex-shrink: 0; */
+  border-radius: 31px;
+  background: #148A08;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20.143px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105.688%;
+  /* 26.573px */
+  letter-spacing: 0.503px;
+  text-align: center;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+
+.picked-button span {
+  color: #085C00;
+  font-family: Roboto;
+  font-size: 22.333px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105.688%;
+  /* 27.831px */
+  letter-spacing: 0.527px;
+  padding-left: 10px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.alert-message {
+  color: #F00;
+  font-family: Roboto;
+  font-size: 20.14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105.688%;
+  /* 26.57px */
+  letter-spacing: 0.503px;
+}
+.genre-category::-webkit-scrollbar {
+  display: none;
+}
+.genre-category {
+  width: 50%;
+  height: 80vh;
+  overflow: scroll;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 14px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.next-button {
+  width: 200px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 38.857px;
+  background: #148A08;
+
+
+  color: #FFF;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 26.286px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 92.2%;
+  /* 24.235px */
+  letter-spacing: 0.526px;
+
+
+  position: absolute;
+  bottom: 30px;
+  right: 150px;
+}

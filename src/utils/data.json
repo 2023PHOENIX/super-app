@@ -1,0 +1,49 @@
+[
+    {
+        "id" : 1,
+        "heading": "Action",
+        "img": "https://s3-alpha-sig.figma.com/img/61e3/7c12/c4dec726b2728f622e0515db4db88d29?Expires=1698624000&Signature=aBSjtYsg0zI9YkRa0h-kj3z-ptj5bxr0NI2vRBBYN6aHf-8R8PiDxZg9LjhLUqbzjC9Fx9YU-6RTa7fvYDeztBgrS~aWs-KYaPWC0hIy8RoXb5CNQq1H7nQeq82sGz2fQ6f1i4NlDnU-qvmBmBl3KH9FmljKwtwmKEOGDeGBIeu9u6WHhYgNn-i9qofqa8u83j0ZLPRTcrOdOKCLEMlyuxlnaIHZZHDjgbUpa-fjwxAua4JYE8hd~Mh3kCqmqyaykQoOc8Z6~pTYiy8m679CzS9LbNBkRX5NE8sQg9KgQHiL~qHVOoXSfHujn-RdCmWF5MmjlxwEYUc2cJb8BncJCw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    },
+    {
+        "id" : 2,
+        "heading": "Drama",
+        "img": "https://s3-alpha-sig.figma.com/img/352f/43af/a4708c73abc57d453cde278b09fb1186?Expires=1698624000&Signature=lvQ4ae-PbrVzELSBjYWl00sUrhEjoonj6mYrJDR9p409x1BmjtufwYvNfRHTG7eRxYS8xUWkZN1kVGiTTL-D14dBK08TArjD8J1YypGYNseJRhRvpfGTzZQsUcoLO8CXn0-HRsCsh7dJAYLfiNYn-oTGjIYRKSWUQs3Z7HqW~~LqpFuLwFEGy7GSas4t4-N3X8hkoPI96u0e0JkLkk1j8VjGFu8LFfk-dY0KSJxvlLxjopNBTgNKIu8GIF0PsR5~yUhnXHhf9i~-0WEdn~3F3rmSd7Y95OJLj1kXizQ4QZmBzIizRtYUDu7yJddOPQL2QAgwc-os6S~rh0JaWGp8qw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    },
+    {
+        "id" : 3,
+        "heading": "Romance",
+        "img": "https://s3-alpha-sig.figma.com/img/9d53/7405/d747debca63143d2755f3574107ddb23?Expires=1698624000&Signature=OqKPIpi7CY9YWK4Gb9dQ1fnkwbQmzL2CB2S7qhCTFqQZQlwc7uGBZ-NuZ7ZJRbbJlHxJfyF2wldbrcxfsqsF2Ze~G-DBHtksCWeJAZ3HPwLXh~pEZ3dcim4IeYyfyu1a8UpgL85a7trq3HSVAMvNUb46zvNjl3iPiF6bG99zRxrEsnhGtOFPQ-fUTHPsrrZ-AH-Yt~IstMVRUNxyE227oeicORByxXMD0ZPmOtk-uiYenHiE1AH6BjgQ1XWX8GB~yJZEV-ZMT91UKibxVaPYZ~0~fqtSA0gRI-9Zm7nhQn~RLfMK3Ph-qnNxpC0oLqNJ~T7zm25m47WCaPW0lgZdWQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    },
+    {
+        "id" : 4,
+        "heading": "Thriller",
+        "img": "https://s3-alpha-sig.figma.com/img/6843/a8c4/f1eeda63160b7168e1e2f52bbc62513e?Expires=1698624000&Signature=g78VFP3lQkcgB~UG~zJyuCTvMvHXr4SHeXkpeZj9hZeKvO-XWWng-ruCJ0vs6BdRWfXrOntXfJeEYCKgFunaqKv1vMXkVvxpKFJuow8zwcmxckHyJWqYBA8-EMv6oTxpE42x8txQknhZ389pNe3Fdjk7JYtCjqKCcgEmRtHipCxl~VfwcfIpoVo6DTfOu4~kgMohYsqLG6fv915kypCQXBPn~orXG5~REgWFadCBRxFtpuZTJUkZVnoqosYjA4mRq-1UEoA4aQo30Ytl~H6jE3-cuOve6QLEZWKufkt8DRyY0VhqN42Ji2VdWx5yPiiAJ-BUVby8lQYPAIuLHiY8Wg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    },
+    {
+        "id" : 5,
+        "heading": "Western",
+        "img": "https://s3-alpha-sig.figma.com/img/8b6e/e1b7/756c86e21bf5ba349baf91016ed9a8dc?Expires=1698624000&Signature=KtIYr6EQedqZ3QyooW48X6PuhvgX2fNaTNTidNYvUX3jk0wSBuBU-E3LFUqKHVjSWwBSb2dX7gZ5NTnNfe0uWtkXI6m6SJP2VU5R91cxhuqa~9aUUXyrlddQOf2~G82ww7n~QEo2w6AqKAQKp2A0RSYl4BpPZvrg5GY~WaORtyqIwMibXYk6clsl9-EtO8~kf-f7r4ZBlkfTDxsMYUZA0VPgf~gjCe-v22pjlfkl0rOxrPJ7FmCdb9FsbYk4oL4h01JT269eBDEXE7Eg5rpb1WtGqpL8x26SB7WK03Ex-KHK68DC1hmN3zGxv9Edzuc-2efSFYQ7AmyxivF3aVv2hA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    },
+    {
+        "id" : 6,
+        "heading": "Horror",
+        "img": "https://s3-alpha-sig.figma.com/img/f21a/d522/b6c878d8a633609d8450cfb98511cc89?Expires=1698624000&Signature=Oen9phNqY3mAbFV6wyQm0IKNJbjenkjtrZCAe~v4WF-L2TA~8Kap69Sgk9Wv-eWJLcoqJCDBRTYYbvH~H9kOWGgihf3TW65AGWB1Hn3YoSmFzvB6IOqUkphkjw8wfPP3r7y6CnzR89xL9OHhkygZBa6bV0CjtDlvdm8Uaju57P4sXsZIGDRRhhK43~qELaIq9528d3fePbuFmzfF105FpspKmL7WYqrxbSszk92sihu1Bi6kMJb6nBwUE6~UJgUDzfhwUmTOR4lANgq0-~LNENVLeuhpZm0EGUTXq~Dvu2Vps~jMjbIcSSjDB3Rc~wtdxH9XjSF4Jq60ybER548onQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    },
+    {
+        "id" : 7,
+        "heading": "Fantasy",
+        "img": "https://s3-alpha-sig.figma.com/img/fd19/97fb/6a3afa2b07953f793022c6eae90ea3c9?Expires=1698624000&Signature=nynNz3uwmDFo5LucTiyFZk1DdNh43UPWilnyS61YVgSkw70h2mvtZRKF9DTR~yt453hoQTh4DnvgVgeFRHwem5gOFjuJJwOIBwcNf4bkE4P2J6GEJeGbhPmg0H6wh8m19xw-S3KJjmM1Chpq5G-Ctdl1KkeF~8dD4aPpxwWQjA1QzpvHLwMDqcR011qrwSEotxUD~MqSGqMwk9IDH-odLU6l8SEjsxYxIIp4pIu4BBMW88iYyAvA6sGDwYhy8iEVMAJI1j31-l3JQeSGbTcLidGNjni-DbnCU3ylnigmWpWHt9oT5nSJj~dfHTaSa~PZseERTpKP2amZ19RsOdYXcA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    },
+    {
+        "id" :  8,
+        "heading": "Music",
+        "img": "https://s3-alpha-sig.figma.com/img/407d/256f/96a1a15bc0fe7621c72274bf0efc55f0?Expires=1698624000&Signature=Vw7GOMuJucLRAecDHcAUS68T9m5PPY5tbViSkyJsT~asFp8J6bL-B7D~H50aDIvb4xbjvt8p-tgnjCH0svIuFz7Ct0mXfNPLNRhAfiOO7K36q2Gnjp7IuSMD6K~8LhuoA1urPqhsd2bE-6WjALO5R42OEkEJqg2zphlzjHWrjG5mFbCx5Lu1sAFQ-HFgE0mgEirsJQ3Rjr00sNWbl4~3~PO4svGEx6dQ-uTYxQ4PlQJMUD7JGq3SrRo7j0eF2goa1ddQ9oi4rZHZdFIK2fyGmhizNBo1KxCCSSq~VhnqIaUEED~0LQFSrayfapDqdAW40oj1LgLUmGMgfyoevZ13YQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        
+    },
+    {
+        "id" : 9,
+        "heading": "Fiction",
+        "img": "https://s3-alpha-sig.figma.com/img/ab51/ca62/8ce3412a242698db2503fd83abadde4c?Expires=1698624000&Signature=YqV5fxynEN1SLm2L2aoSeW7cI4DvAq7xRqFNa15F57IaqH5rTPpbee5k3HsdVTOV8fScEgbK~y91OLR~NCxr8JpeOEVXxpvHX4LEI23hD3SDK81qWI8iwQ2T00~TM7VdthPXYlmTO6NzAWA9Mwzb6TLm7yLHIcDJpTAEt6howjXHZoE0dUJ58WEX5NxSB9nbTooKrrmoKsPLxLcIOen4wn7vpAlvizl80bkBwCXGBNp1gDfXuqpNb3nGuG0cEmA9~p2aTRX7-LFukJ1Jy~0ocSOXaQOdiOHbRELasKdttNkq1H6vSqLsQLzI2H8Lrn~TunstmiDdgm7YNTZyA5q6oQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" 
+       
+    }
+]

@@ -28,7 +28,7 @@ function App() {
       
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Register />} />
+          <Route path='/' element={<Category />} />
           <Route path='/register' element={<Register/>} />
           <Route path='/category' element={<Category/>} />
         </Routes>
