@@ -3,7 +3,7 @@
     width: 210px;
     height: 180px;
     flex-shrink: 0;
-    
+
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -19,9 +19,11 @@
     line-height: normal;
     padding-left: 5px;
 }
-.img-wrapper{
-    margin : 0 auto;
+
+.img-wrapper {
+    margin: 0 auto;
 }
+
 .card-body img {
     width: 165.624px;
     height: 90px;
@@ -31,7 +33,7 @@
         url(<path-to-image>),
         lightgray 50% / cover no-repeat;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.55);
-    
+
 
 
 }
@@ -39,7 +41,6 @@
 
 .Action {
     border-radius: 20px;
-    border: 6px solid #11B800;
     background: #FF5209;
 }
 
@@ -50,7 +51,6 @@
 
 .Romance {
     border-radius: 20px;
-    border: 6px solid #11B800;
     background: #148A08;
 }
 
@@ -76,11 +76,16 @@
 
 .Music {
     border-radius: 20px;
-    border: 6px solid #11B800;
     background: #E61E32;
 }
 
 .Fiction {
     border-radius: 20px;
     background: #6CD061;
+}
+
+
+.selected-card {
+
+    border: 6px solid #11B800
 }

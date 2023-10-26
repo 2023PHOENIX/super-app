@@ -12,22 +12,21 @@ function Category() {
     const check = selectedGenre.find((x) => x === data);
 
     if (check === undefined) {
-      
       setSelectedGenre((prev) => [...prev, data]);
-      localStorage.setItem("user-selected-category", [...selectedGenre,data]);
+      localStorage.setItem("user-selected-category", [...selectedGenre, data]);
     }
   };
   const deleteActionGenre = (data) => {
     const newList = selectedGenre.filter((x) => x !== data);
     setSelectedGenre(newList);
 
-    localStorage.setItem("user-selected-category",newList);
+    localStorage.setItem("user-selected-category", newList);
   };
 
   const nextPageHandler = () => {
     // TODO: next page handler.
-    alert('please redirect me.');
-  }
+    alert("please redirect me.");
+  };
 
   return (
     <div className="category-page">
@@ -38,7 +37,7 @@ function Category() {
 
         <div className="category-pick">
           {selectedGenre.map((genre, i) => (
-            <div className="picked-button">
+            <div className="picked-button" key={i}>
               {genre} <span onClick={() => deleteActionGenre(genre)}>x</span>{" "}
             </div>
           ))}
@@ -49,11 +48,19 @@ function Category() {
       </div>
       <div className="genre-category">
         {categoryData.map((genre) => (
-          <GenreCard data={genre} key={genre.id} addGenre={addSelectedGenre} />
+          <GenreCard
+            data={genre}
+            key={genre.id}
+            addGenre={addSelectedGenre}
+            selectedGenre={selectedGenre}
+            deleteActionGenre={deleteActionGenre}
+          />
         ))}
       </div>
 
-      <button className="next-button" onClick={nextPageHandler}>Next Page</button>
+      <button className="next-button" onClick={nextPageHandler}>
+        Next Page
+      </button>
     </div>
   );
 }

@@ -1,10 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import Register from './pages/register/Register'
-  import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import { useState } from "react";
+import "./App.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Category from './pages/category/Category';
+
+
+
+
+
+import Home from "./pages/home/Home";
+import Category from "./pages/category/Category";
+import Register from "./pages/register/Register";
+
 /*
   ? How many pages are there in app 
 
@@ -16,30 +23,22 @@ import Category from './pages/category/Category';
   ! 4 pages 
 */
 
-
 // TODO1:[] creating the registration page.
 
-
-
 function App() {
-
   return (
     <>
-      
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Category />} />
-          <Route path='/register' element={<Register/>} />
-          <Route path='/category' element={<Category/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/category" element={<Category />} />
         </Routes>
-        
       </BrowserRouter>
-      
 
-
-      <ToastContainer/>
+      <ToastContainer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
