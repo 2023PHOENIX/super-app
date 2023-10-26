@@ -84,14 +84,16 @@ const RegisterForm = () => {
       toast;
     }
   };
-  const hasError = Object.values(error).some(x => x !== '');
+  const hasError = Object.values(error).some((x) => x !== "");
   return (
-    <div className={"form " +(  hasError ?'error-state-form' : '') }>
+    <div className={"form " + (hasError ? "error-state-form" : "")}>
       <div className="title">
         <h1>Super App</h1>
-        <p> Create your new account</p>
+        <p>Create your new account</p>
       </div>
-      <div className={"form-input " + (hasError ? 'error-state-input-form' : '')}>
+      <div
+        className={"form-input " + (hasError ? "error-state-input-form" : "")}
+      >
         <input
           type="text"
           className={"input " + (error?.name ? "input-feild-error" : "")}
@@ -154,7 +156,7 @@ const RegisterForm = () => {
       <div className="term-condition">
         <p>
           By clicking on Sign up. you agree to Superapp{" "}
-          <span className="special-text">Terms and Conditions of Use </span>
+          <span className="special-text">Terms and Conditions of Use</span>
         </p>
         <p>
           To learn more about how Superapp collects, uses, shares and protects

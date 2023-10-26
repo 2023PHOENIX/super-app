@@ -1,0 +1,8 @@
+.weather {
+    width: 550px;
+    height: 200px;
+    flex-shrink: 0;
+    background-color: yellow;
+    border-radius: 33.428px;
+    background: #101744;
+}

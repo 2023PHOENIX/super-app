@@ -11,7 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Category from "./pages/category/Category";
 import Register from "./pages/register/Register";
-
+import Brose from "./pages/browse/Brose";
 /*
   ? How many pages are there in app 
 
@@ -19,7 +19,7 @@ import Register from "./pages/register/Register";
   ^ category page 
   ^ Profile Page [having some extra components]
   ^ Entertainment page [it have movies category wise]
-
+  
   ! 4 pages 
 */
 
@@ -30,7 +30,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Brose />} />
           <Route path="/register" element={<Register />} />
           <Route path="/category" element={<Category />} />
         </Routes>
