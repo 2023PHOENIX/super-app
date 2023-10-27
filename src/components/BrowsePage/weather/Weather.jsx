@@ -82,7 +82,7 @@ function Weather() {
           <div className="weather-info-comp">
             <div className="w-info-comp">
               <img src={Wind} />
-              {weatherInfo["wind_kph"]}km/h
+              { weatherInfo && weatherInfo["wind_kph"]}km/h
               <br />
               Wind
             </div>
@@ -92,7 +92,7 @@ function Weather() {
           <div className="weather-info-comp">
             <div className="w-info-comp">
               <img src={Humidity} />
-              {weatherInfo["humidity"]}% <br />
+              {weatherInfo && weatherInfo["humidity"]}% <br />
               Humidity
             </div>
           </div>
