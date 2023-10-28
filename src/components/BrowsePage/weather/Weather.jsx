@@ -34,9 +34,21 @@ function Weather() {
   const fetchTime = () => {
     if (weatherData) {
       const time = weatherData["location"].localtime.split(" ")[1];
-      console.log(time);
+      // console.log(time);
       const arr = time.split(":");
-      const amOrPm = arr[0] >= 12 ? "pm" : "am";
+      const amOrPm = arr[0] >= 12 ? "PM" : "AM";
+
+      const latestTime = arr[0] + ":" + arr[1] + " " + amOrPm;
+
+      localStorage.setItem("time", JSON.stringify({
+        time: latestTime,
+        date: weatherData["location"].localtime
+          .split(" ")[0]
+          .split("-")
+          .reverse()
+          .join("-"),
+      }));
+
       return (
         <span>
           {arr[0]}:{arr[1]} {amOrPm}
@@ -82,7 +94,7 @@ function Weather() {
           <div className="weather-info-comp">
             <div className="w-info-comp">
               <img src={Wind} />
-              { weatherInfo && weatherInfo["wind_kph"]}km/h
+              {weatherInfo && weatherInfo["wind_kph"]}km/h
               <br />
               Wind
             </div>
