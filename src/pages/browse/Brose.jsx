@@ -7,6 +7,8 @@ import Weather from "../../components/BrowsePage/weather/Weather";
 import Wallpaper from "./../../assets/profile/wallpaper-mountain.png";
 import { useEffect } from "react";
 import { useState } from "react";
+import Notes from "../../components/BrowsePage/notes/Notes";
+import Timer from "../../components/BrowsePage/timer/Timer";
 const Brose = () => {
   const [news, setNews] = useState(null);
 
@@ -14,14 +16,12 @@ const Brose = () => {
     const url =
       "https://newsapi.org/v2/everything?q=tesla&from=2023-09-27&sortBy=publishedAt&apiKey=451345b7ec1f48c3bd285d3343017bb0";
 
-
     const response = await fetch(url);
 
     const data = await response.json();
     // console.log(data);
 
-    setNews(data.articles)
-    
+    setNews(data.articles);
   };
 
   useEffect(() => {
@@ -47,9 +47,17 @@ const Brose = () => {
 
   return (
     <div className="brose-page">
-      <div className="left">
-        <Profile />
-        <Weather />
+      <div className="left-block">
+        <div className="left-upper-half">
+          <div className="left">
+            <Profile />
+            <Weather />
+          </div>
+
+          <Notes />
+        </div>
+
+        <Timer/>
       </div>
       <div className="right">
         <div className="wallpaper">
@@ -58,8 +66,7 @@ const Brose = () => {
             <div>Want to climb Mount Everest?</div>
 
             <div className="date-time">
-              <div>{JSON.parse(localStorage.getItem("time")).date}</div>
-              |
+              <div>{JSON.parse(localStorage.getItem("time")).date}</div>|
               <div>{JSON.parse(localStorage.getItem("time")).time}</div>
             </div>
           </div>

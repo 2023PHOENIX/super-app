@@ -16,7 +16,7 @@ function Profile(props) {
 
       <div className="profile-details">
         <div className="heading-name">
-          {user?.name}
+         KK Vinay 
           <br></br>
           Vinay090@gmail.com
           <br></br>
@@ -27,12 +27,12 @@ function Profile(props) {
           {userInfo.map((u,i) => {
             return <div key={i} className="user-genre">{u}</div>
           })}
-          {/* <div className="user-genre">Horror</div>
           <div className="user-genre">Horror</div>
           <div className="user-genre">Horror</div>
           <div className="user-genre">Horror</div>
           <div className="user-genre">Horror</div>
-          <div className="user-genre">Horror</div> */}
+          <div className="user-genre">Horror</div>
+          <div className="user-genre">Horror</div>
           {/* <div className="user-genre">Horror</div> */}
         </div>
       </div>

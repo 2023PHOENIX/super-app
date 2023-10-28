@@ -1,8 +1,8 @@
 .profile {
     border-radius: 33.428px;
     background: #5746EA;
-    width: 550px;
-    height: 380px;
+    width: 400px;
+    height: 250px;
     flex-shrink: 0;
 
     display: flex;
@@ -16,13 +16,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 30px;
+    margin: 0 20px;
     /* background-color: yellow; */
 }
 
 .img-profile {
-    width: 140px;
-    height: 300px;
+    width: 100px;
+    height: 200px;
     flex-shrink: 0;
 }
 
@@ -30,15 +30,15 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 60px;
+    margin-top: 35px;
     align-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .heading-name {
     color: #FFF;
     font-family: Roboto;
-    font-size: 21px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 140.188%;
@@ -52,7 +52,7 @@
 .user-name {
     color: #FFF;
     font-family: Roboto;
-    font-size: 41px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: 66.188%;
@@ -61,7 +61,8 @@
 }
 
 .user-genre-wrapper {
-    width: 360px;
+    width: 220px;
+
     /* background-color: blue; */
     display: flex;
     flex-direction: row;
@@ -70,7 +71,7 @@
     justify-content: flex-start;
     overflow: scroll;
     scroll-behavior: smooth;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
     /* overflow: hidden; */
 }
 
@@ -79,22 +80,23 @@
 }
 
 .user-genre {
-    width: 135px;
-    height: 35px;
+    width: 100px;
+    height: 29px;
     border-radius: 21px;
     background: #9F94FF;
     flex-shrink: 0;
     /* text-align: center; */
     color: #FFF;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 105.688%;
     /* 16.91px */
     letter-spacing: 0.32px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left : 20px;
 
 }

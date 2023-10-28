@@ -1,9 +1,9 @@
 .weather {
-    width: 550px;
-    height: 200px;
+    width: 400px;
+    height: 140px;
     flex-shrink: 0;
     background-color: yellow;
-    border-radius: 33.428px;
+    border-radius: 17.428px;
     background: #101744;
 }
 
@@ -11,14 +11,14 @@
 .time-date {
     color: #FFF;
     font-family: Roboto;
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    width: 550px;
-    height: 60px;
+    width: 400px;
+    height: 40px;
     flex-shrink: 0;
-    border-radius: 33.428px 33.428px 0px 0px;
+    border-radius: 17px 17px 0px 0px;
     background: #FF4ADE;
     display: flex;
     flex-direction: row;
@@ -42,11 +42,11 @@
     align-items: center;
     color: #FFF;
     font-family: Roboto;
-    font-size: 17px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: 139.688%;
-    gap : 20px;
+    gap: 20px;
     /* 43.907px */
 }
 
@@ -57,39 +57,38 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap : 10px;
+    gap: 10px;
     margin-top: 5px;
-    
+
 }
 
 
-.therm{
+.therm {
     height: 20px;
     width: 20px;
 }
 
-.temprature{
+.temprature {
     color: #FFF;
-font-family: Roboto;
-font-size: 50.224px;
-font-style: normal;
-font-weight: 400;
-line-height: 139.688%; /* 109.27px */
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%;
+    /* 109.27px */
 }
 
-.w-info-comp{
+.w-info-comp {
     display: flex;
     flex-direction: row;
-    gap : 15px;
+    gap: 15px;
     align-items: center;
-;
+    ;
 }
 
 
 .w-info-comp img {
-    height : 25px;
-    width: 25px;;
+    height: 15px;
+    width: 15px;
+    ;
 }
-
-
-
