@@ -66,8 +66,8 @@ const Brose = () => {
             <div>Want to climb Mount Everest?</div>
 
             <div className="date-time">
-              <div>{JSON.parse(localStorage.getItem("time")).date}</div>|
-              <div>{JSON.parse(localStorage.getItem("time")).time}</div>
+              <div>{JSON.parse(localStorage.getItem("time"))?.date}</div>|
+              <div>{JSON.parse(localStorage.getItem("time"))?.time}</div>
             </div>
           </div>
         </div>

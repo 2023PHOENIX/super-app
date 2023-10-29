@@ -6,4 +6,11 @@
     background: #1E2343;
     color: white;
     text-align: center;
+    
+    display: flex;
+    align-items: center;
+    /* z-index: -2; */
+    justify-content: flex-start;
+
+    gap : 150px;
 }

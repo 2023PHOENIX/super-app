@@ -3,7 +3,7 @@ import ProfileImage from "../../../assets/browse/profile-image.png";
 import "./profile.css"
 function Profile(props) {
   
-  const userInfo = localStorage.getItem('user-selected-category').split(",");
+  const userInfo = localStorage.getItem('user-selected-category')?.split(",");
   const user = localStorage.getItem('user');
   // console.log(user);
 
@@ -24,7 +24,7 @@ function Profile(props) {
         </div>
 
         <div className="user-genre-wrapper">
-          {userInfo.map((u,i) => {
+          {userInfo?.map((u,i) => {
             return <div key={i} className="user-genre">{u}</div>
           })}
           <div className="user-genre">Horror</div>
